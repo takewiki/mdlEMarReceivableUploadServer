@@ -156,6 +156,8 @@ arReceivableSyncServer <- function(input, output, session, dms_token, erp_token)
 
     mdlEMarReceivableUploadr::arReceivable_ERPSync()
 
+    mdlEMarReceivableUploadPkg::erp_arReceivable_orderno_update(erp_token = erp_token)
+
     tsui::pop_notice("回传成功")
 
 
